@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Test demo REST service
 Library    String
-Library    ..${/}library${/}DemoREST
+Library    demo_rest.DemoREST
 
 
 *** Variables ***
