@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180202 18:06:44.979" generator="Rebot 3.0.2 (Python 2.7.12 on linux2)">
+<suite source="/home/ITRANSITION.CORP/e.danilovich/GitHub/article_team_city_robot-master/tests/tests.robot" id="s1" name="Tests">
+<test id="s1-t1" name="Auth Request Positive">
+<kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${VALID_NAME}, ${VALID_PASSWORD} and check ${STATUS_OK}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth" library="demo_rest.DemoREST">
+<doc>Get status_code from request after login attempt</doc>
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code}</var>
+</assign>
+<msg timestamp="20180202 18:06:40.686" level="INFO">${st_code} = 200</msg>
+<status status="PASS" endtime="20180202 18:06:40.687" starttime="20180202 18:06:38.989"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${st_code}</arg>
+<arg>${status_code}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:40.688" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:40.688" starttime="20180202 18:06:40.687"></status>
+</kw>
+<status status="PASS" endtime="20180202 18:06:40.689" starttime="20180202 18:06:38.988"></status>
+</kw>
+<kw name="Login with us@43!_er, ${VALID_PASSWORD} and us@43!_er, ${VALID_PASSWORD} and check ${STATUS_OK}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth" library="demo_rest.DemoREST">
+<doc>Get status_code from request after login attempt</doc>
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code}</var>
+</assign>
+<msg timestamp="20180202 18:06:40.984" level="INFO">${st_code} = 200</msg>
+<status status="PASS" endtime="20180202 18:06:40.984" starttime="20180202 18:06:40.691"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${st_code}</arg>
+<arg>${status_code}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:40.985" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:40.986" starttime="20180202 18:06:40.985"></status>
+</kw>
+<status status="PASS" endtime="20180202 18:06:40.986" starttime="20180202 18:06:40.689"></status>
+</kw>
+<kw name="Login with us@43!_er, pas@!_s and us@43!_er, pas@!_s and check ${STATUS_OK}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth" library="demo_rest.DemoREST">
+<doc>Get status_code from request after login attempt</doc>
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code}</var>
+</assign>
+<msg timestamp="20180202 18:06:41.289" level="INFO">${st_code} = 200</msg>
+<status status="PASS" endtime="20180202 18:06:41.289" starttime="20180202 18:06:40.988"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${st_code}</arg>
+<arg>${status_code}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:41.290" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:41.290" starttime="20180202 18:06:41.289"></status>
+</kw>
+<status status="PASS" endtime="20180202 18:06:41.291" starttime="20180202 18:06:40.987"></status>
+</kw>
+<doc>Check status_code from request after login attempt
+with credentials specified in Template's tags</doc>
+<status status="PASS" endtime="20180202 18:06:41.291" critical="yes" starttime="20180202 18:06:38.988"></status>
+</test>
+<test id="s1-t2" name="Auth Request Negative">
+<kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and nameInvalid, passInvalid and check ${STATUS_UNAUTHORIZED}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth" library="demo_rest.DemoREST">
+<doc>Get status_code from request after login attempt</doc>
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code}</var>
+</assign>
+<msg timestamp="20180202 18:06:42.588" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180202 18:06:42.588" starttime="20180202 18:06:41.295"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${st_code}</arg>
+<arg>${status_code}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:42.589" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:42.590" starttime="20180202 18:06:42.588"></status>
+</kw>
+<status status="PASS" endtime="20180202 18:06:42.590" starttime="20180202 18:06:41.294"></status>
+</kw>
+<kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${VALID_NAME}, passInvalid and check ${STATUS_UNAUTHORIZED}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth" library="demo_rest.DemoREST">
+<doc>Get status_code from request after login attempt</doc>
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code}</var>
+</assign>
+<msg timestamp="20180202 18:06:42.884" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180202 18:06:42.885" starttime="20180202 18:06:42.592"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${st_code}</arg>
+<arg>${status_code}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:42.886" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:42.886" starttime="20180202 18:06:42.885"></status>
+</kw>
+<status status="PASS" endtime="20180202 18:06:42.886" starttime="20180202 18:06:42.590"></status>
+</kw>
+<kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and nameInvalid, ${VALID_PASSWORD} and check ${STATUS_UNAUTHORIZED}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth" library="demo_rest.DemoREST">
+<doc>Get status_code from request after login attempt</doc>
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code}</var>
+</assign>
+<msg timestamp="20180202 18:06:43.192" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180202 18:06:43.193" starttime="20180202 18:06:42.888"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${st_code}</arg>
+<arg>${status_code}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:43.194" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:43.194" starttime="20180202 18:06:43.193"></status>
+</kw>
+<status status="PASS" endtime="20180202 18:06:43.195" starttime="20180202 18:06:42.887"></status>
+</kw>
+<kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${VALID_NAME}, ${EMPTY} and check ${STATUS_UNAUTHORIZED}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth" library="demo_rest.DemoREST">
+<doc>Get status_code from request after login attempt</doc>
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code}</var>
+</assign>
+<msg timestamp="20180202 18:06:43.494" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180202 18:06:43.494" starttime="20180202 18:06:43.197"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${st_code}</arg>
+<arg>${status_code}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:43.496" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:43.496" starttime="20180202 18:06:43.495"></status>
+</kw>
+<status status="PASS" endtime="20180202 18:06:43.496" starttime="20180202 18:06:43.195"></status>
+</kw>
+<kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and nameInvalid, ${EMPTY} and check ${STATUS_UNAUTHORIZED}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth" library="demo_rest.DemoREST">
+<doc>Get status_code from request after login attempt</doc>
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code}</var>
+</assign>
+<msg timestamp="20180202 18:06:43.797" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180202 18:06:43.797" starttime="20180202 18:06:43.498"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${st_code}</arg>
+<arg>${status_code}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:43.798" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:43.799" starttime="20180202 18:06:43.797"></status>
+</kw>
+<status status="PASS" endtime="20180202 18:06:43.799" starttime="20180202 18:06:43.497"></status>
+</kw>
+<kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${EMPTY}, ${VALID_PASSWORD} and check ${STATUS_UNAUTHORIZED}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth" library="demo_rest.DemoREST">
+<doc>Get status_code from request after login attempt</doc>
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code}</var>
+</assign>
+<msg timestamp="20180202 18:06:44.100" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180202 18:06:44.101" starttime="20180202 18:06:43.801"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${st_code}</arg>
+<arg>${status_code}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:44.102" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:44.102" starttime="20180202 18:06:44.101"></status>
+</kw>
+<status status="PASS" endtime="20180202 18:06:44.103" starttime="20180202 18:06:43.799"></status>
+</kw>
+<kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${EMPTY}, passInvalid and check ${STATUS_UNAUTHORIZED}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth" library="demo_rest.DemoREST">
+<doc>Get status_code from request after login attempt</doc>
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code}</var>
+</assign>
+<msg timestamp="20180202 18:06:44.400" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180202 18:06:44.400" starttime="20180202 18:06:44.104"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${st_code}</arg>
+<arg>${status_code}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:44.402" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:44.402" starttime="20180202 18:06:44.401"></status>
+</kw>
+<status status="PASS" endtime="20180202 18:06:44.402" starttime="20180202 18:06:44.103"></status>
+</kw>
+<doc>Check status_code from request after login attempt
+with credentials specified in Template's tags</doc>
+<status status="PASS" endtime="20180202 18:06:44.403" critical="yes" starttime="20180202 18:06:41.292"></status>
+</test>
+<test id="s1-t3" name="Count Responce Lines">
+<kw name="Call Steam" library="demo_rest.DemoREST">
+<doc>Get status_code and content from request with specified</doc>
+<arguments>
+<arg>${number_of_lines}</arg>
+</arguments>
+<assign>
+<var>${status_code}</var>
+<var>${json}</var>
+</assign>
+<msg timestamp="20180202 18:06:44.702" level="INFO">${status_code} = 200</msg>
+<msg timestamp="20180202 18:06:44.703" level="INFO">${json} = {"headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate", "Host": "httpbin.org", "User-Agent": "python-requests/2.18.4", "Connection": "close"}, "url": "http://httpbin.org/stream/2", "args": {...</msg>
+<status status="PASS" endtime="20180202 18:06:44.703" starttime="20180202 18:06:44.405"></status>
+</kw>
+<kw name="Get Line Count" library="String">
+<doc>Returns and logs the number of lines in the given string.</doc>
+<arguments>
+<arg>${json}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20180202 18:06:44.704" level="INFO">2 lines</msg>
+<msg timestamp="20180202 18:06:44.704" level="INFO">${result} = 2</msg>
+<status status="PASS" endtime="20180202 18:06:44.704" starttime="20180202 18:06:44.703"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${status_code}</arg>
+<arg>${STATUS_OK}</arg>
+</arguments>
+<msg timestamp="20180202 18:06:44.706" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180202 18:06:44.706" starttime="20180202 18:06:44.705"></status>
+</kw>
+<doc>Check number of lines in stream response is the same to a given one</doc>
+<status status="PASS" endtime="20180202 18:06:44.706" critical="yes" starttime="20180202 18:06:44.403"></status>
+</test>
+<doc>Test demo REST service</doc>
+<status status="PASS" endtime="20180202 18:06:44.708" starttime="20180202 18:06:38.931"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tests" pass="3">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
