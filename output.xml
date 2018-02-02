@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180202 17:34:36.091" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<robot generated="20180202 17:53:01.137" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
 <suite source="/home/ITRANSITION.CORP/e.danilovich/GitHub/article_team_city_robot-master/tests.robot" id="s1" name="Tests">
 <test id="s1-t1" name="Auth Request Positive">
 <kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${VALID_NAME}, ${VALID_PASSWORD} and check ${STATUS_OK}">
@@ -14,14 +14,14 @@
 <assign>
 <var>${st_code} =</var>
 </assign>
-<msg timestamp="20180202 17:34:36.114" level="FAIL">No keyword with name 'Call Basic Auth' found.</msg>
-<status status="FAIL" endtime="20180202 17:34:36.114" starttime="20180202 17:34:36.114"></status>
+<msg timestamp="20180202 17:53:01.159" level="FAIL">No keyword with name 'Call Basic Auth' found.</msg>
+<status status="FAIL" endtime="20180202 17:53:01.159" starttime="20180202 17:53:01.159"></status>
 </kw>
-<status status="FAIL" endtime="20180202 17:34:36.114" starttime="20180202 17:34:36.112"></status>
+<status status="FAIL" endtime="20180202 17:53:01.159" starttime="20180202 17:53:01.157"></status>
 </kw>
 <doc>Check status_code from request after login attempt
 with credentials specified in Template's tags</doc>
-<status status="FAIL" endtime="20180202 17:34:36.114" critical="yes" starttime="20180202 17:34:36.112">No keyword with name 'Call Basic Auth' found.</status>
+<status status="FAIL" endtime="20180202 17:53:01.159" critical="yes" starttime="20180202 17:53:01.156">No keyword with name 'Call Basic Auth' found.</status>
 </test>
 <test id="s1-t2" name="Auth Request Negative">
 <kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and nameInvalid, passInvalid and check ${STATUS_UNAUTHORIZED}">
@@ -36,14 +36,14 @@ with credentials specified in Template's tags</doc>
 <assign>
 <var>${st_code} =</var>
 </assign>
-<msg timestamp="20180202 17:34:36.117" level="FAIL">No keyword with name 'Call Basic Auth' found.</msg>
-<status status="FAIL" endtime="20180202 17:34:36.117" starttime="20180202 17:34:36.117"></status>
+<msg timestamp="20180202 17:53:01.163" level="FAIL">No keyword with name 'Call Basic Auth' found.</msg>
+<status status="FAIL" endtime="20180202 17:53:01.163" starttime="20180202 17:53:01.162"></status>
 </kw>
-<status status="FAIL" endtime="20180202 17:34:36.117" starttime="20180202 17:34:36.115"></status>
+<status status="FAIL" endtime="20180202 17:53:01.163" starttime="20180202 17:53:01.161"></status>
 </kw>
 <doc>Check status_code from request after login attempt
 with credentials specified in Template's tags</doc>
-<status status="FAIL" endtime="20180202 17:34:36.117" critical="yes" starttime="20180202 17:34:36.115">No keyword with name 'Call Basic Auth' found.</status>
+<status status="FAIL" endtime="20180202 17:53:01.163" critical="yes" starttime="20180202 17:53:01.160">No keyword with name 'Call Basic Auth' found.</status>
 </test>
 <test id="s1-t3" name="Count Responce Lines">
 <kw name="Call Steam">
@@ -54,14 +54,14 @@ with credentials specified in Template's tags</doc>
 <var>${status_code}</var>
 <var>${json} =</var>
 </assign>
-<msg timestamp="20180202 17:34:36.119" level="FAIL">No keyword with name 'Call Steam' found.</msg>
-<status status="FAIL" endtime="20180202 17:34:36.119" starttime="20180202 17:34:36.119"></status>
+<msg timestamp="20180202 17:53:01.165" level="FAIL">No keyword with name 'Call Steam' found.</msg>
+<status status="FAIL" endtime="20180202 17:53:01.165" starttime="20180202 17:53:01.165"></status>
 </kw>
 <doc>Check number of lines in stream response is the same to a given one</doc>
-<status status="FAIL" endtime="20180202 17:34:36.120" critical="yes" starttime="20180202 17:34:36.118">No keyword with name 'Call Steam' found.</status>
+<status status="FAIL" endtime="20180202 17:53:01.166" critical="yes" starttime="20180202 17:53:01.163">No keyword with name 'Call Steam' found.</status>
 </test>
 <doc>Test demo REST service</doc>
-<status status="FAIL" endtime="20180202 17:34:36.120" starttime="20180202 17:34:36.092"></status>
+<status status="FAIL" endtime="20180202 17:53:01.166" starttime="20180202 17:53:01.138"></status>
 </suite>
 <statistics>
 <total>
@@ -75,7 +75,7 @@ with credentials specified in Template's tags</doc>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20180202 17:34:36.111" level="ERROR">Error in file '/home/ITRANSITION.CORP/e.danilovich/GitHub/article_team_city_robot-master/tests.robot': Importing test library 'demo_rest.DemoRES' failed: ImportError: No module named demo_rest
+<msg timestamp="20180202 17:53:01.156" level="ERROR">Error in file '/home/ITRANSITION.CORP/e.danilovich/GitHub/article_team_city_robot-master/tests.robot': Importing test library 'demo_rest.DemoREST' failed: ImportError: No module named demo_rest
 Traceback (most recent call last):
   None
 PYTHONPATH:
