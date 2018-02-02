@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180202 17:31:01.151" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<suite source="/home/ITRANSITION.CORP/e.danilovich/GitHub/article_team_city_robot-master/test_project/tests.robot" id="s1" name="Tests">
+<test id="s1-t1" name="Auth Request Positive">
+<kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${VALID_NAME}, ${VALID_PASSWORD} and check ${STATUS_OK}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth">
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code} =</var>
+</assign>
+<msg timestamp="20180202 17:31:01.173" level="FAIL">No keyword with name 'Call Basic Auth' found.</msg>
+<status status="FAIL" endtime="20180202 17:31:01.173" starttime="20180202 17:31:01.173"></status>
+</kw>
+<status status="FAIL" endtime="20180202 17:31:01.173" starttime="20180202 17:31:01.171"></status>
+</kw>
+<doc>Check status_code from request after login attempt
+with credentials specified in Template's tags</doc>
+<status status="FAIL" endtime="20180202 17:31:01.174" critical="yes" starttime="20180202 17:31:01.171">No keyword with name 'Call Basic Auth' found.</status>
+</test>
+<test id="s1-t2" name="Auth Request Negative">
+<kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and nameInvalid, passInvalid and check ${STATUS_UNAUTHORIZED}">
+<doc>Check status_code from request after login attempt</doc>
+<kw name="Call Basic Auth">
+<arguments>
+<arg>${base_name}</arg>
+<arg>${base_password}</arg>
+<arg>${check_name}</arg>
+<arg>${check_password}</arg>
+</arguments>
+<assign>
+<var>${st_code} =</var>
+</assign>
+<msg timestamp="20180202 17:31:01.176" level="FAIL">No keyword with name 'Call Basic Auth' found.</msg>
+<status status="FAIL" endtime="20180202 17:31:01.176" starttime="20180202 17:31:01.176"></status>
+</kw>
+<status status="FAIL" endtime="20180202 17:31:01.176" starttime="20180202 17:31:01.174"></status>
+</kw>
+<doc>Check status_code from request after login attempt
+with credentials specified in Template's tags</doc>
+<status status="FAIL" endtime="20180202 17:31:01.177" critical="yes" starttime="20180202 17:31:01.174">No keyword with name 'Call Basic Auth' found.</status>
+</test>
+<test id="s1-t3" name="Count Responce Lines">
+<kw name="Call Steam">
+<arguments>
+<arg>${number_of_lines}</arg>
+</arguments>
+<assign>
+<var>${status_code}</var>
+<var>${json} =</var>
+</assign>
+<msg timestamp="20180202 17:31:01.179" level="FAIL">No keyword with name 'Call Steam' found.</msg>
+<status status="FAIL" endtime="20180202 17:31:01.179" starttime="20180202 17:31:01.179"></status>
+</kw>
+<doc>Check number of lines in stream response is the same to a given one</doc>
+<status status="FAIL" endtime="20180202 17:31:01.179" critical="yes" starttime="20180202 17:31:01.177">No keyword with name 'Call Steam' found.</status>
+</test>
+<doc>Test demo REST service</doc>
+<status status="FAIL" endtime="20180202 17:31:01.179" starttime="20180202 17:31:01.152"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="0">Critical Tests</stat>
+<stat fail="3" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="Tests" pass="0">Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180202 17:31:01.170" level="ERROR">Error in file '/home/ITRANSITION.CORP/e.danilovich/GitHub/article_team_city_robot-master/test_project/tests.robot': Importing test library 'demo_rest.DemoRES' failed: ImportError: No module named demo_rest
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/ITRANSITION.CORP/e.danilovich/.pyenv/versions/2.7.12/bin
+  /home/ITRANSITION.CORP/e.danilovich/PycharmProjects/Bercut-source-code/Source Code
+  /home/ITRANSITION.CORP/e.danilovich/GitHub/article_team_city_robot-master/demo_rest.py
+  /home/ITRANSITION.CORP/e.danilovich/.pyenv/versions/2.7.12/lib/python27.zip
+  /home/ITRANSITION.CORP/e.danilovich/.pyenv/versions/2.7.12/lib/python2.7
+  /home/ITRANSITION.CORP/e.danilovich/.pyenv/versions/2.7.12/lib/python2.7/plat-linux2
+  /home/ITRANSITION.CORP/e.danilovich/.pyenv/versions/2.7.12/lib/python2.7/lib-tk
+  /home/ITRANSITION.CORP/e.danilovich/.pyenv/versions/2.7.12/lib/python2.7/lib-old
+  /home/ITRANSITION.CORP/e.danilovich/.pyenv/versions/2.7.12/lib/python2.7/lib-dynload
+  /home/ITRANSITION.CORP/e.danilovich/.pyenv/versions/2.7.12/lib/python2.7/site-packages</msg>
+</errors>
+</robot>
