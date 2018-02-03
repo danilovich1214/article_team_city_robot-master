@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180203 10:46:09.599" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<robot generated="20180203 11:21:57.431" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
 <suite source="/home/ITRANSITION.CORP/e.danilovich/GitHub/article_team_city_robot-master/tests.robot" id="s1" name="Tests">
 <test id="s1-t1" name="Auth Request Positive">
 <kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${VALID_NAME}, ${VALID_PASSWORD} and check ${STATUS_OK}">
@@ -15,8 +15,8 @@
 <assign>
 <var>${st_code}</var>
 </assign>
-<msg timestamp="20180203 10:46:09.979" level="INFO">${st_code} = 200</msg>
-<status status="PASS" endtime="20180203 10:46:09.979" starttime="20180203 10:46:09.655"></status>
+<msg timestamp="20180203 11:21:57.828" level="INFO">${st_code} = 200</msg>
+<status status="PASS" endtime="20180203 11:21:57.828" starttime="20180203 11:21:57.488"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -24,12 +24,12 @@
 <arg>${st_code}</arg>
 <arg>${status_code}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:09.981" level="INFO">Argument types are:
+<msg timestamp="20180203 11:21:57.830" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:09.981" starttime="20180203 10:46:09.980"></status>
+<status status="PASS" endtime="20180203 11:21:57.830" starttime="20180203 11:21:57.829"></status>
 </kw>
-<status status="PASS" endtime="20180203 10:46:09.982" starttime="20180203 10:46:09.655"></status>
+<status status="PASS" endtime="20180203 11:21:57.830" starttime="20180203 11:21:57.488"></status>
 </kw>
 <kw name="Login with us@43!_er, ${VALID_PASSWORD} and us@43!_er, ${VALID_PASSWORD} and check ${STATUS_OK}">
 <doc>Check status_code from request after login attempt</doc>
@@ -44,8 +44,8 @@
 <assign>
 <var>${st_code}</var>
 </assign>
-<msg timestamp="20180203 10:46:10.275" level="INFO">${st_code} = 200</msg>
-<status status="PASS" endtime="20180203 10:46:10.275" starttime="20180203 10:46:09.983"></status>
+<msg timestamp="20180203 11:21:58.132" level="INFO">${st_code} = 200</msg>
+<status status="PASS" endtime="20180203 11:21:58.132" starttime="20180203 11:21:57.832"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -53,12 +53,12 @@
 <arg>${st_code}</arg>
 <arg>${status_code}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:10.276" level="INFO">Argument types are:
+<msg timestamp="20180203 11:21:58.134" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:10.277" starttime="20180203 10:46:10.276"></status>
+<status status="PASS" endtime="20180203 11:21:58.134" starttime="20180203 11:21:58.133"></status>
 </kw>
-<status status="PASS" endtime="20180203 10:46:10.277" starttime="20180203 10:46:09.982"></status>
+<status status="PASS" endtime="20180203 11:21:58.135" starttime="20180203 11:21:57.831"></status>
 </kw>
 <kw name="Login with us@43!_er, pas@!_s and us@43!_er, pas@!_s and check ${STATUS_OK}">
 <doc>Check status_code from request after login attempt</doc>
@@ -73,8 +73,8 @@
 <assign>
 <var>${st_code}</var>
 </assign>
-<msg timestamp="20180203 10:46:10.575" level="INFO">${st_code} = 200</msg>
-<status status="PASS" endtime="20180203 10:46:10.575" starttime="20180203 10:46:10.279"></status>
+<msg timestamp="20180203 11:21:58.450" level="INFO">${st_code} = 200</msg>
+<status status="PASS" endtime="20180203 11:21:58.451" starttime="20180203 11:21:58.136"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -82,16 +82,16 @@
 <arg>${st_code}</arg>
 <arg>${status_code}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:10.577" level="INFO">Argument types are:
+<msg timestamp="20180203 11:21:58.451" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:10.577" starttime="20180203 10:46:10.576"></status>
+<status status="PASS" endtime="20180203 11:21:58.451" starttime="20180203 11:21:58.451"></status>
 </kw>
-<status status="PASS" endtime="20180203 10:46:10.577" starttime="20180203 10:46:10.278"></status>
+<status status="PASS" endtime="20180203 11:21:58.451" starttime="20180203 11:21:58.135"></status>
 </kw>
 <doc>Check status_code from request after login attempt
 with credentials specified in Template's tags</doc>
-<status status="PASS" endtime="20180203 10:46:10.578" critical="yes" starttime="20180203 10:46:09.655"></status>
+<status status="PASS" endtime="20180203 11:21:58.451" critical="yes" starttime="20180203 11:21:57.487"></status>
 </test>
 <test id="s1-t2" name="Auth Request Negative">
 <kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and nameInvalid, passInvalid and check ${STATUS_UNAUTHORIZED}">
@@ -107,8 +107,8 @@ with credentials specified in Template's tags</doc>
 <assign>
 <var>${st_code}</var>
 </assign>
-<msg timestamp="20180203 10:46:10.883" level="INFO">${st_code} = 401</msg>
-<status status="PASS" endtime="20180203 10:46:10.883" starttime="20180203 10:46:10.581"></status>
+<msg timestamp="20180203 11:21:58.752" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180203 11:21:58.752" starttime="20180203 11:21:58.453"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -116,12 +116,12 @@ with credentials specified in Template's tags</doc>
 <arg>${st_code}</arg>
 <arg>${status_code}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:10.884" level="INFO">Argument types are:
+<msg timestamp="20180203 11:21:58.754" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:10.885" starttime="20180203 10:46:10.883"></status>
+<status status="PASS" endtime="20180203 11:21:58.754" starttime="20180203 11:21:58.753"></status>
 </kw>
-<status status="PASS" endtime="20180203 10:46:10.885" starttime="20180203 10:46:10.580"></status>
+<status status="PASS" endtime="20180203 11:21:58.754" starttime="20180203 11:21:58.452"></status>
 </kw>
 <kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${VALID_NAME}, passInvalid and check ${STATUS_UNAUTHORIZED}">
 <doc>Check status_code from request after login attempt</doc>
@@ -136,8 +136,8 @@ with credentials specified in Template's tags</doc>
 <assign>
 <var>${st_code}</var>
 </assign>
-<msg timestamp="20180203 10:46:11.181" level="INFO">${st_code} = 401</msg>
-<status status="PASS" endtime="20180203 10:46:11.182" starttime="20180203 10:46:10.887"></status>
+<msg timestamp="20180203 11:21:59.057" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180203 11:21:59.057" starttime="20180203 11:21:58.756"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -145,12 +145,12 @@ with credentials specified in Template's tags</doc>
 <arg>${st_code}</arg>
 <arg>${status_code}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:11.183" level="INFO">Argument types are:
+<msg timestamp="20180203 11:21:59.058" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:11.183" starttime="20180203 10:46:11.182"></status>
+<status status="PASS" endtime="20180203 11:21:59.059" starttime="20180203 11:21:59.057"></status>
 </kw>
-<status status="PASS" endtime="20180203 10:46:11.184" starttime="20180203 10:46:10.886"></status>
+<status status="PASS" endtime="20180203 11:21:59.059" starttime="20180203 11:21:58.755"></status>
 </kw>
 <kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and nameInvalid, ${VALID_PASSWORD} and check ${STATUS_UNAUTHORIZED}">
 <doc>Check status_code from request after login attempt</doc>
@@ -165,8 +165,8 @@ with credentials specified in Template's tags</doc>
 <assign>
 <var>${st_code}</var>
 </assign>
-<msg timestamp="20180203 10:46:11.474" level="INFO">${st_code} = 401</msg>
-<status status="PASS" endtime="20180203 10:46:11.474" starttime="20180203 10:46:11.185"></status>
+<msg timestamp="20180203 11:21:59.366" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180203 11:21:59.366" starttime="20180203 11:21:59.061"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -174,12 +174,12 @@ with credentials specified in Template's tags</doc>
 <arg>${st_code}</arg>
 <arg>${status_code}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:11.475" level="INFO">Argument types are:
+<msg timestamp="20180203 11:21:59.367" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:11.476" starttime="20180203 10:46:11.475"></status>
+<status status="PASS" endtime="20180203 11:21:59.368" starttime="20180203 11:21:59.367"></status>
 </kw>
-<status status="PASS" endtime="20180203 10:46:11.476" starttime="20180203 10:46:11.184"></status>
+<status status="PASS" endtime="20180203 11:21:59.368" starttime="20180203 11:21:59.059"></status>
 </kw>
 <kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${VALID_NAME}, ${EMPTY} and check ${STATUS_UNAUTHORIZED}">
 <doc>Check status_code from request after login attempt</doc>
@@ -194,8 +194,8 @@ with credentials specified in Template's tags</doc>
 <assign>
 <var>${st_code}</var>
 </assign>
-<msg timestamp="20180203 10:46:11.766" level="INFO">${st_code} = 401</msg>
-<status status="PASS" endtime="20180203 10:46:11.766" starttime="20180203 10:46:11.478"></status>
+<msg timestamp="20180203 11:21:59.668" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180203 11:21:59.668" starttime="20180203 11:21:59.370"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -203,12 +203,12 @@ with credentials specified in Template's tags</doc>
 <arg>${st_code}</arg>
 <arg>${status_code}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:11.768" level="INFO">Argument types are:
+<msg timestamp="20180203 11:21:59.670" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:11.768" starttime="20180203 10:46:11.767"></status>
+<status status="PASS" endtime="20180203 11:21:59.670" starttime="20180203 11:21:59.669"></status>
 </kw>
-<status status="PASS" endtime="20180203 10:46:11.769" starttime="20180203 10:46:11.477"></status>
+<status status="PASS" endtime="20180203 11:21:59.670" starttime="20180203 11:21:59.369"></status>
 </kw>
 <kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and nameInvalid, ${EMPTY} and check ${STATUS_UNAUTHORIZED}">
 <doc>Check status_code from request after login attempt</doc>
@@ -223,8 +223,8 @@ with credentials specified in Template's tags</doc>
 <assign>
 <var>${st_code}</var>
 </assign>
-<msg timestamp="20180203 10:46:12.065" level="INFO">${st_code} = 401</msg>
-<status status="PASS" endtime="20180203 10:46:12.065" starttime="20180203 10:46:11.770"></status>
+<msg timestamp="20180203 11:21:59.966" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180203 11:21:59.966" starttime="20180203 11:21:59.673"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -232,12 +232,12 @@ with credentials specified in Template's tags</doc>
 <arg>${st_code}</arg>
 <arg>${status_code}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:12.066" level="INFO">Argument types are:
+<msg timestamp="20180203 11:21:59.968" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:12.067" starttime="20180203 10:46:12.065"></status>
+<status status="PASS" endtime="20180203 11:21:59.968" starttime="20180203 11:21:59.967"></status>
 </kw>
-<status status="PASS" endtime="20180203 10:46:12.067" starttime="20180203 10:46:11.769"></status>
+<status status="PASS" endtime="20180203 11:21:59.968" starttime="20180203 11:21:59.671"></status>
 </kw>
 <kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${EMPTY}, ${VALID_PASSWORD} and check ${STATUS_UNAUTHORIZED}">
 <doc>Check status_code from request after login attempt</doc>
@@ -252,8 +252,8 @@ with credentials specified in Template's tags</doc>
 <assign>
 <var>${st_code}</var>
 </assign>
-<msg timestamp="20180203 10:46:12.364" level="INFO">${st_code} = 401</msg>
-<status status="PASS" endtime="20180203 10:46:12.365" starttime="20180203 10:46:12.069"></status>
+<msg timestamp="20180203 11:22:00.264" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180203 11:22:00.265" starttime="20180203 11:21:59.970"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -261,12 +261,12 @@ with credentials specified in Template's tags</doc>
 <arg>${st_code}</arg>
 <arg>${status_code}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:12.366" level="INFO">Argument types are:
+<msg timestamp="20180203 11:22:00.266" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:12.366" starttime="20180203 10:46:12.365"></status>
+<status status="PASS" endtime="20180203 11:22:00.266" starttime="20180203 11:22:00.265"></status>
 </kw>
-<status status="PASS" endtime="20180203 10:46:12.367" starttime="20180203 10:46:12.067"></status>
+<status status="PASS" endtime="20180203 11:22:00.267" starttime="20180203 11:21:59.969"></status>
 </kw>
 <kw name="Login with ${VALID_NAME}, ${VALID_PASSWORD} and ${EMPTY}, passInvalid and check ${STATUS_UNAUTHORIZED}">
 <doc>Check status_code from request after login attempt</doc>
@@ -281,8 +281,8 @@ with credentials specified in Template's tags</doc>
 <assign>
 <var>${st_code}</var>
 </assign>
-<msg timestamp="20180203 10:46:12.665" level="INFO">${st_code} = 401</msg>
-<status status="PASS" endtime="20180203 10:46:12.665" starttime="20180203 10:46:12.369"></status>
+<msg timestamp="20180203 11:22:00.571" level="INFO">${st_code} = 401</msg>
+<status status="PASS" endtime="20180203 11:22:00.571" starttime="20180203 11:22:00.269"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -290,16 +290,16 @@ with credentials specified in Template's tags</doc>
 <arg>${st_code}</arg>
 <arg>${status_code}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:12.666" level="INFO">Argument types are:
+<msg timestamp="20180203 11:22:00.573" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:12.667" starttime="20180203 10:46:12.665"></status>
+<status status="PASS" endtime="20180203 11:22:00.573" starttime="20180203 11:22:00.572"></status>
 </kw>
-<status status="PASS" endtime="20180203 10:46:12.667" starttime="20180203 10:46:12.367"></status>
+<status status="PASS" endtime="20180203 11:22:00.573" starttime="20180203 11:22:00.267"></status>
 </kw>
 <doc>Check status_code from request after login attempt
 with credentials specified in Template's tags</doc>
-<status status="PASS" endtime="20180203 10:46:12.667" critical="yes" starttime="20180203 10:46:10.579"></status>
+<status status="PASS" endtime="20180203 11:22:00.574" critical="yes" starttime="20180203 11:21:58.452"></status>
 </test>
 <test id="s1-t3" name="Count Responce Lines">
 <kw name="Call Steam" library="demo_rest.DemoREST">
@@ -311,9 +311,9 @@ with credentials specified in Template's tags</doc>
 <var>${status_code}</var>
 <var>${json}</var>
 </assign>
-<msg timestamp="20180203 10:46:12.960" level="INFO">${status_code} = 200</msg>
-<msg timestamp="20180203 10:46:12.960" level="INFO">${json} = {"id": 0, "origin": "86.57.158.98", "headers": {"Host": "httpbin.org", "Accept-Encoding": "gzip, deflate", "Connection": "close", "User-Agent": "python-requests/2.18.4", "Accept": "*/*"}, "args": {}, ...</msg>
-<status status="PASS" endtime="20180203 10:46:12.961" starttime="20180203 10:46:12.669"></status>
+<msg timestamp="20180203 11:22:00.875" level="INFO">${status_code} = 200</msg>
+<msg timestamp="20180203 11:22:00.875" level="INFO">${json} = {"headers": {"Accept-Encoding": "gzip, deflate", "Accept": "*/*", "User-Agent": "python-requests/2.18.4", "Host": "httpbin.org", "Connection": "close"}, "args": {}, "url": "http://httpbin.org/stream/2...</msg>
+<status status="PASS" endtime="20180203 11:22:00.875" starttime="20180203 11:22:00.576"></status>
 </kw>
 <kw name="Get Line Count" library="String">
 <doc>Returns and logs the number of lines in the given string.</doc>
@@ -323,9 +323,9 @@ with credentials specified in Template's tags</doc>
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20180203 10:46:12.962" level="INFO">2 lines</msg>
-<msg timestamp="20180203 10:46:12.962" level="INFO">${result} = 2</msg>
-<status status="PASS" endtime="20180203 10:46:12.962" starttime="20180203 10:46:12.961"></status>
+<msg timestamp="20180203 11:22:00.877" level="INFO">2 lines</msg>
+<msg timestamp="20180203 11:22:00.877" level="INFO">${result} = 2</msg>
+<status status="PASS" endtime="20180203 11:22:00.877" starttime="20180203 11:22:00.876"></status>
 </kw>
 <kw name="Should Be Equal As Numbers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
@@ -333,16 +333,16 @@ with credentials specified in Template's tags</doc>
 <arg>${status_code}</arg>
 <arg>${STATUS_OK}</arg>
 </arguments>
-<msg timestamp="20180203 10:46:12.964" level="INFO">Argument types are:
+<msg timestamp="20180203 11:22:00.878" level="INFO">Argument types are:
 &lt;type 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20180203 10:46:12.964" starttime="20180203 10:46:12.963"></status>
+<status status="PASS" endtime="20180203 11:22:00.879" starttime="20180203 11:22:00.877"></status>
 </kw>
 <doc>Check number of lines in stream response is the same to a given one</doc>
-<status status="PASS" endtime="20180203 10:46:12.964" critical="yes" starttime="20180203 10:46:12.668"></status>
+<status status="PASS" endtime="20180203 11:22:00.879" critical="yes" starttime="20180203 11:22:00.574"></status>
 </test>
 <doc>Test demo REST service</doc>
-<status status="PASS" endtime="20180203 10:46:12.966" starttime="20180203 10:46:09.600"></status>
+<status status="PASS" endtime="20180203 11:22:00.881" starttime="20180203 11:21:57.470"></status>
 </suite>
 <statistics>
 <total>
@@ -356,5 +356,6 @@ with credentials specified in Template's tags</doc>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20180203 11:21:57.468" level="ERROR">Taking listener 'demo_rest.py' into use failed: Listener '/home/ITRANSITION.CORP/e.danilovich/GitHub/article_team_city_robot-master/demo_rest.py' does not have mandatory 'ROBOT_LISTENER_API_VERSION' attribute.</msg>
 </errors>
 </robot>

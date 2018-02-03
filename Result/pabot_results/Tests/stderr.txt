@@ -1,0 +1,1 @@
+[ ERROR ] Taking listener 'demo_rest.py' into use failed: Listener '/home/ITRANSITION.CORP/e.danilovich/GitHub/article_team_city_robot-master/demo_rest.py' does not have mandatory 'ROBOT_LISTENER_API_VERSION' attribute.
